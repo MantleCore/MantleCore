@@ -1,0 +1,258 @@
+
+#ifndef MANTLE_BUNDLES_VULKAN_STRUCTS_HEADER_
+#define MANTLE_BUNDLES_VULKAN_STRUCTS_HEADER_
+
+#include "CustomTypes.h"
+
+namespace MantleGfx {
+
+	struct MANTLE_GFX_API MgPhysicalDevicePropertiesBundle {
+		VkPhysicalDeviceProperties2									mgPhysicalDeviceProperties2;
+		VkPhysicalDeviceDepthStencilResolveProperties				mgPhysicalDeviceDepthStencilResolveProperties;
+		VkPhysicalDeviceDescriptorIndexingProperties				mgPhysicalDeviceDescriptorIndexingProperties;
+		VkPhysicalDeviceDriverProperties							mgPhysicalDeviceDriverProperties;
+		VkPhysicalDeviceFloatControlsProperties						mgPhysicalDeviceFloatControlsProperties;
+		VkPhysicalDeviceIDProperties								mgPhysicalDeviceIDProperties;
+		VkPhysicalDeviceInlineUniformBlockProperties				mgPhysicalDeviceInlineUniformBlockProperties;
+		VkPhysicalDeviceMaintenance3Properties						mgPhysicalDeviceMaintenance3Properties;
+		VkPhysicalDeviceMaintenance4Properties						mgPhysicalDeviceMaintenance4Properties;
+		VkPhysicalDeviceMultiviewProperties							mgPhysicalDeviceMultiviewProperties;
+		VkPhysicalDevicePointClippingProperties						mgPhysicalDevicePointClippingProperties;
+		VkPhysicalDeviceProtectedMemoryProperties					mgPhysicalDeviceProtectedMemoryProperties;
+		VkPhysicalDeviceSamplerFilterMinmaxProperties				mgPhysicalDeviceSamplerFilterMinmaxProperties;
+		VkPhysicalDeviceShaderIntegerDotProductProperties			mgPhysicalDeviceShaderIntegerDotProductProperties;
+		VkPhysicalDeviceSubgroupProperties							mgPhysicalDeviceSubgroupProperties;
+		VkPhysicalDeviceSubgroupSizeControlProperties				mgPhysicalDeviceSubgroupSizeControlProperties;
+		VkPhysicalDeviceTexelBufferAlignmentProperties				mgPhysicalDeviceTexelBufferAlignmentProperties;
+		VkPhysicalDeviceTimelineSemaphoreProperties					mgPhysicalDeviceTimelineSemaphoreProperties;
+		
+		VkPhysicalDeviceAccelerationStructurePropertiesKHR			mgPhysicalDeviceAccelerationStructurePropertiesKHR;
+		VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR		mgPhysicalDeviceFragmentShaderBarycentricPropertiesKHR;
+		VkPhysicalDeviceFragmentShadingRatePropertiesKHR			mgPhysicalDeviceFragmentShadingRatePropertiesKHR;
+		VkPhysicalDevicePerformanceQueryPropertiesKHR				mgPhysicalDevicePerformanceQueryPropertiesKHR;
+		VkPhysicalDevicePushDescriptorPropertiesKHR					mgPhysicalDevicePushDescriptorPropertiesKHR;
+		VkPhysicalDeviceRayTracingPipelinePropertiesKHR				mgPhysicalDeviceRayTracingPipelinePropertiesKHR;
+		
+		VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT			mgPhysicalDeviceBlendOperationAdvancedPropertiesEXT;
+		VkPhysicalDeviceConservativeRasterizationPropertiesEXT		mgPhysicalDeviceConservativeRasterizationPropertiesEXT;
+		VkPhysicalDeviceCustomBorderColorPropertiesEXT				mgPhysicalDeviceCustomBorderColorPropertiesEXT;
+		VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT		mgPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT;
+		VkPhysicalDeviceDescriptorBufferPropertiesEXT				mgPhysicalDeviceDescriptorBufferPropertiesEXT;
+		VkPhysicalDeviceDiscardRectanglePropertiesEXT				mgPhysicalDeviceDiscardRectanglePropertiesEXT;
+		VkPhysicalDeviceDrmPropertiesEXT							mgPhysicalDeviceDrmPropertiesEXT;
+		VkPhysicalDeviceExtendedDynamicState3PropertiesEXT			mgPhysicalDeviceExtendedDynamicState3PropertiesEXT;
+		VkPhysicalDeviceExternalMemoryHostPropertiesEXT				mgPhysicalDeviceExternalMemoryHostPropertiesEXT;
+		VkPhysicalDeviceFragmentDensityMap2PropertiesEXT			mgPhysicalDeviceFragmentDensityMap2PropertiesEXT;
+		VkPhysicalDeviceFragmentDensityMapPropertiesEXT				mgPhysicalDeviceFragmentDensityMapPropertiesEXT;
+		VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT		mgPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT;
+		VkPhysicalDeviceLineRasterizationPropertiesEXT				mgPhysicalDeviceLineRasterizationPropertiesEXT;
+		VkPhysicalDeviceMeshShaderPropertiesEXT						mgPhysicalDeviceMeshShaderPropertiesEXT;
+		VkPhysicalDeviceMultiDrawPropertiesEXT						mgPhysicalDeviceMultiDrawPropertiesEXT;
+		VkPhysicalDeviceOpacityMicromapPropertiesEXT				mgPhysicalDeviceOpacityMicromapPropertiesEXT;
+		VkPhysicalDevicePCIBusInfoPropertiesEXT						mgPhysicalDevicePCIBusInfoPropertiesEXT;
+		VkPhysicalDevicePipelineRobustnessPropertiesEXT				mgPhysicalDevicePipelineRobustnessPropertiesEXT;
+		VkPhysicalDeviceProvokingVertexPropertiesEXT				mgPhysicalDeviceProvokingVertexPropertiesEXT;
+		VkPhysicalDeviceRobustness2PropertiesEXT					mgPhysicalDeviceRobustness2PropertiesEXT;
+		VkPhysicalDeviceSampleLocationsPropertiesEXT				mgPhysicalDeviceSampleLocationsPropertiesEXT;
+		VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT			mgPhysicalDeviceShaderModuleIdentifierPropertiesEXT;
+		VkPhysicalDeviceShaderObjectPropertiesEXT					mgPhysicalDeviceShaderObjectPropertiesEXT;
+		VkPhysicalDeviceShaderTileImagePropertiesEXT				mgPhysicalDeviceShaderTileImagePropertiesEXT;
+		VkPhysicalDeviceTransformFeedbackPropertiesEXT				mgPhysicalDeviceTransformFeedbackPropertiesEXT;
+		VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT			mgPhysicalDeviceVertexAttributeDivisorPropertiesEXT;
+
+#ifdef NVIDIA_BUNDLE
+		VkPhysicalDeviceCooperativeMatrixPropertiesNV				mgPhysicalDeviceCooperativeMatrixPropertiesNV;
+		VkPhysicalDeviceCopyMemoryIndirectPropertiesNV				mgPhysicalDeviceCopyMemoryIndirectPropertiesNV;
+		VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV			mgPhysicalDeviceDeviceGeneratedCommandsPropertiesNV;
+		VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV		mgPhysicalDeviceFragmentShadingRateEnumsPropertiesNV;
+		VkPhysicalDeviceMemoryDecompressionPropertiesNV				mgPhysicalDeviceMemoryDecompressionPropertiesNV;
+		VkPhysicalDeviceMeshShaderPropertiesNV						mgPhysicalDeviceMeshShaderPropertiesNV;
+		VkPhysicalDeviceOpticalFlowPropertiesNV						mgPhysicalDeviceOpticalFlowPropertiesNV;
+		VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV		mgPhysicalDeviceRayTracingInvocationReorderPropertiesNV;
+		VkPhysicalDeviceRayTracingPropertiesNV						mgPhysicalDeviceRayTracingPropertiesNV;
+		VkPhysicalDeviceShaderSMBuiltinsPropertiesNV				mgPhysicalDeviceShaderSMBuiltinsPropertiesNV;
+		VkPhysicalDeviceShadingRateImagePropertiesNV				mgPhysicalDeviceShadingRateImagePropertiesNV;
+#endif
+
+		//VkPhysicalDeviceCooperativeMatrixPropertiesKHR				mgPhysicalDeviceCooperativeMatrixPropertiesKHR;
+		//VkPhysicalDeviceDisplacementMicromapPropertiesNV			mgPhysicalDeviceDisplacementMicromapPropertiesNV;
+		//VkPhysicalDevicePortabilitySubsetPropertiesKHR				mgPhysicalDevicePortabilitySubsetPropertiesKHR;
+	};
+
+	struct MANTLE_GFX_API MgPhysicalDeviceFeaturesBundle {
+		VkPhysicalDeviceFeatures2										mgPhysicalDeviceFeatures2;
+		VkPhysicalDevice16BitStorageFeatures							mgPhysicalDevice16BitStorageFeatures;
+		VkPhysicalDevice8BitStorageFeatures								mgPhysicalDevice8BitStorageFeatures;
+		VkPhysicalDeviceBufferDeviceAddressFeatures						mgPhysicalDeviceBufferDeviceAddressFeatures;
+		VkPhysicalDeviceDescriptorIndexingFeatures						mgPhysicalDeviceDescriptorIndexingFeatures;
+		VkPhysicalDeviceDynamicRenderingFeatures						mgPhysicalDeviceDynamicRenderingFeatures;
+		VkPhysicalDeviceHostQueryResetFeatures							mgPhysicalDeviceHostQueryResetFeatures;
+		VkPhysicalDeviceImageRobustnessFeatures							mgPhysicalDeviceImageRobustnessFeatures;
+		VkPhysicalDeviceImagelessFramebufferFeatures					mgPhysicalDeviceImagelessFramebufferFeatures;
+		VkPhysicalDeviceInlineUniformBlockFeatures						mgPhysicalDeviceInlineUniformBlockFeatures;
+		VkPhysicalDeviceMaintenance4Features							mgPhysicalDeviceMaintenance4Features;
+		VkPhysicalDeviceMultiviewFeatures								mgPhysicalDeviceMultiviewFeatures;
+		VkPhysicalDevicePipelineCreationCacheControlFeatures			mgPhysicalDevicePipelineCreationCacheControlFeatures;
+		VkPhysicalDevicePrivateDataFeatures								mgPhysicalDevicePrivateDataFeatures;
+		VkPhysicalDeviceProtectedMemoryFeatures							mgPhysicalDeviceProtectedMemoryFeatures;
+		VkPhysicalDeviceSamplerYcbcrConversionFeatures					mgPhysicalDeviceSamplerYcbcrConversionFeatures;
+		VkPhysicalDeviceScalarBlockLayoutFeatures						mgPhysicalDeviceScalarBlockLayoutFeatures;
+		VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures				mgPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
+		VkPhysicalDeviceShaderAtomicInt64Features						mgPhysicalDeviceShaderAtomicInt64Features;
+		VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures			mgPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
+		VkPhysicalDeviceShaderDrawParametersFeatures					mgPhysicalDeviceShaderDrawParametersFeatures;
+		VkPhysicalDeviceShaderFloat16Int8Features						mgPhysicalDeviceShaderFloat16Int8Features;
+		VkPhysicalDeviceShaderIntegerDotProductFeatures					mgPhysicalDeviceShaderIntegerDotProductFeatures;
+		VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures				mgPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
+		VkPhysicalDeviceShaderTerminateInvocationFeatures				mgPhysicalDeviceShaderTerminateInvocationFeatures;
+		VkPhysicalDeviceSubgroupSizeControlFeatures						mgPhysicalDeviceSubgroupSizeControlFeatures;
+		VkPhysicalDeviceSynchronization2Features						mgPhysicalDeviceSynchronization2Features;
+		VkPhysicalDeviceTextureCompressionASTCHDRFeatures				mgPhysicalDeviceTextureCompressionASTCHDRFeatures;
+		VkPhysicalDeviceTimelineSemaphoreFeatures						mgPhysicalDeviceTimelineSemaphoreFeatures;
+		VkPhysicalDeviceUniformBufferStandardLayoutFeatures				mgPhysicalDeviceUniformBufferStandardLayoutFeatures;
+		VkPhysicalDeviceVariablePointersFeatures						mgPhysicalDeviceVariablePointersFeatures;
+		VkPhysicalDeviceVulkanMemoryModelFeatures						mgPhysicalDeviceVulkanMemoryModelFeatures;
+		VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures			mgPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
+
+		VkPhysicalDeviceAccelerationStructureFeaturesKHR				mgPhysicalDeviceAccelerationStructureFeaturesKHR;
+		VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR			mgPhysicalDeviceFragmentShaderBarycentricFeaturesKHR;
+		VkPhysicalDeviceFragmentShadingRateFeaturesKHR					mgPhysicalDeviceFragmentShadingRateFeaturesKHR;
+		VkPhysicalDeviceGlobalPriorityQueryFeaturesKHR					mgPhysicalDeviceGlobalPriorityQueryFeaturesKHR;
+		VkPhysicalDevicePerformanceQueryFeaturesKHR						mgPhysicalDevicePerformanceQueryFeaturesKHR;
+		VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR			mgPhysicalDevicePipelineExecutablePropertiesFeaturesKHR;
+		VkPhysicalDevicePresentIdFeaturesKHR							mgPhysicalDevicePresentIdFeaturesKHR;
+		VkPhysicalDevicePresentWaitFeaturesKHR							mgPhysicalDevicePresentWaitFeaturesKHR;
+		VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR				mgPhysicalDeviceRayTracingMaintenance1FeaturesKHR;
+		VkPhysicalDeviceRayTracingPipelineFeaturesKHR					mgPhysicalDeviceRayTracingPipelineFeaturesKHR;
+		VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR				mgPhysicalDeviceRayTracingPositionFetchFeaturesKHR;
+		VkPhysicalDeviceRayQueryFeaturesKHR								mgPhysicalDeviceRayQueryFeaturesKHR;
+		VkPhysicalDeviceShaderClockFeaturesKHR							mgPhysicalDeviceShaderClockFeaturesKHR;
+		VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR		mgPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR;
+		VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR		mgPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR;
+
+		VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT	mgPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
+		VkDeviceDeviceMemoryReportCreateInfoEXT							mgDeviceDeviceMemoryReportCreateInfoEXT;
+		VkPhysicalDevice4444FormatsFeaturesEXT							mgPhysicalDevice4444FormatsFeaturesEXT;
+		VkPhysicalDeviceASTCDecodeFeaturesEXT							mgPhysicalDeviceASTCDecodeFeaturesEXT;
+		VkPhysicalDeviceAddressBindingReportFeaturesEXT					mgPhysicalDeviceAddressBindingReportFeaturesEXT;
+		VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT	mgPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT;
+		VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT			mgPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT;
+		VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT				mgPhysicalDeviceBlendOperationAdvancedFeaturesEXT;
+		VkPhysicalDeviceBorderColorSwizzleFeaturesEXT					mgPhysicalDeviceBorderColorSwizzleFeaturesEXT;
+		VkPhysicalDeviceBufferDeviceAddressFeaturesEXT					mgPhysicalDeviceBufferDeviceAddressFeaturesEXT;
+		VkPhysicalDeviceColorWriteEnableFeaturesEXT						mgPhysicalDeviceColorWriteEnableFeaturesEXT;
+		VkPhysicalDeviceConditionalRenderingFeaturesEXT					mgPhysicalDeviceConditionalRenderingFeaturesEXT;
+		VkPhysicalDeviceCustomBorderColorFeaturesEXT					mgPhysicalDeviceCustomBorderColorFeaturesEXT;
+		VkPhysicalDeviceDepthClampZeroOneFeaturesEXT					mgPhysicalDeviceDepthClampZeroOneFeaturesEXT;
+		VkPhysicalDeviceDepthClipControlFeaturesEXT						mgPhysicalDeviceDepthClipControlFeaturesEXT;
+		VkPhysicalDeviceDepthClipEnableFeaturesEXT						mgPhysicalDeviceDepthClipEnableFeaturesEXT;
+		VkPhysicalDeviceDescriptorBufferFeaturesEXT						mgPhysicalDeviceDescriptorBufferFeaturesEXT;
+		VkPhysicalDeviceDeviceMemoryReportFeaturesEXT					mgPhysicalDeviceDeviceMemoryReportFeaturesEXT;
+		VkPhysicalDeviceExtendedDynamicState2FeaturesEXT				mgPhysicalDeviceExtendedDynamicState2FeaturesEXT;
+		VkPhysicalDeviceExtendedDynamicState3FeaturesEXT				mgPhysicalDeviceExtendedDynamicState3FeaturesEXT;
+		VkPhysicalDeviceExtendedDynamicStateFeaturesEXT					mgPhysicalDeviceExtendedDynamicStateFeaturesEXT;
+		VkPhysicalDeviceFaultFeaturesEXT								mgPhysicalDeviceFaultFeaturesEXT;
+		VkPhysicalDeviceFragmentDensityMap2FeaturesEXT					mgPhysicalDeviceFragmentDensityMap2FeaturesEXT;
+		VkPhysicalDeviceFragmentDensityMapFeaturesEXT					mgPhysicalDeviceFragmentDensityMapFeaturesEXT;
+		VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT				mgPhysicalDeviceFragmentShaderInterlockFeaturesEXT;
+		VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT				mgPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT;
+		VkPhysicalDeviceImage2DViewOf3DFeaturesEXT						mgPhysicalDeviceImage2DViewOf3DFeaturesEXT;
+		VkPhysicalDeviceImageCompressionControlFeaturesEXT				mgPhysicalDeviceImageCompressionControlFeaturesEXT;
+		VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT		mgPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT;
+		VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT					mgPhysicalDeviceImageSlicedViewOf3DFeaturesEXT;
+		VkPhysicalDeviceImageViewMinLodFeaturesEXT						mgPhysicalDeviceImageViewMinLodFeaturesEXT;
+		VkPhysicalDeviceIndexTypeUint8FeaturesEXT						mgPhysicalDeviceIndexTypeUint8FeaturesEXT;
+		VkPhysicalDeviceLegacyDitheringFeaturesEXT						mgPhysicalDeviceLegacyDitheringFeaturesEXT;
+		VkPhysicalDeviceLineRasterizationFeaturesEXT					mgPhysicalDeviceLineRasterizationFeaturesEXT;
+		VkPhysicalDeviceMemoryPriorityFeaturesEXT						mgPhysicalDeviceMemoryPriorityFeaturesEXT;
+		VkPhysicalDeviceMeshShaderFeaturesEXT							mgPhysicalDeviceMeshShaderFeaturesEXT;
+		VkPhysicalDeviceMultiDrawFeaturesEXT							mgPhysicalDeviceMultiDrawFeaturesEXT;
+		VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT	mgPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT;
+		VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT				mgPhysicalDeviceMutableDescriptorTypeFeaturesEXT;
+		VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT					mgPhysicalDeviceNonSeamlessCubeMapFeaturesEXT;
+		VkPhysicalDeviceOpacityMicromapFeaturesEXT						mgPhysicalDeviceOpacityMicromapFeaturesEXT;
+		VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT			mgPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT;
+		VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT			mgPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT;
+		VkPhysicalDevicePipelinePropertiesFeaturesEXT					mgPhysicalDevicePipelinePropertiesFeaturesEXT;
+		VkPhysicalDevicePipelineProtectedAccessFeaturesEXT				mgPhysicalDevicePipelineProtectedAccessFeaturesEXT;
+		VkPhysicalDevicePipelineRobustnessFeaturesEXT					mgPhysicalDevicePipelineRobustnessFeaturesEXT;
+		VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT			mgPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT;
+		VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT				mgPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT;
+		VkPhysicalDeviceProvokingVertexFeaturesEXT						mgPhysicalDeviceProvokingVertexFeaturesEXT;
+		VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT						mgPhysicalDeviceRGBA10X6FormatsFeaturesEXT;
+		VkPhysicalDeviceRobustness2FeaturesEXT							mgPhysicalDeviceRobustness2FeaturesEXT;
+		VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT					mgPhysicalDeviceShaderAtomicFloat2FeaturesEXT;
+		VkPhysicalDeviceShaderAtomicFloatFeaturesEXT					mgPhysicalDeviceShaderAtomicFloatFeaturesEXT;
+		VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT				mgPhysicalDeviceShaderImageAtomicInt64FeaturesEXT;
+		VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT				mgPhysicalDeviceShaderModuleIdentifierFeaturesEXT;
+		VkPhysicalDeviceShaderObjectFeaturesEXT							mgPhysicalDeviceShaderObjectFeaturesEXT;
+		VkPhysicalDeviceShaderTileImageFeaturesEXT						mgPhysicalDeviceShaderTileImageFeaturesEXT;
+		VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT					mgPhysicalDeviceSubpassMergeFeedbackFeaturesEXT;
+		VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT				mgPhysicalDeviceSwapchainMaintenance1FeaturesEXT;
+		VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT					mgPhysicalDeviceTexelBufferAlignmentFeaturesEXT;
+		VkPhysicalDeviceTransformFeedbackFeaturesEXT					mgPhysicalDeviceTransformFeedbackFeaturesEXT;
+		VkPhysicalDeviceVertexAttributeDivisorFeaturesEXT				mgPhysicalDeviceVertexAttributeDivisorFeaturesEXT;
+		VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT				mgPhysicalDeviceVertexInputDynamicStateFeaturesEXT;
+		VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT				mgPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT;
+		VkPhysicalDeviceYcbcrImageArraysFeaturesEXT						mgPhysicalDeviceYcbcrImageArraysFeaturesEXT;
+
+#ifdef NVIDIA_BUNDLE
+		VkPhysicalDeviceShadingRateImageFeaturesNV						mgPhysicalDeviceShadingRateImageFeaturesNV;
+		VkDeviceDiagnosticsConfigCreateInfoNV							mgDeviceDiagnosticsConfigCreateInfoNV;
+		VkPhysicalDeviceComputeShaderDerivativesFeaturesNV				mgPhysicalDeviceComputeShaderDerivativesFeaturesNV;
+		VkPhysicalDeviceCooperativeMatrixFeaturesNV						mgPhysicalDeviceCooperativeMatrixFeaturesNV;
+		VkPhysicalDeviceCopyMemoryIndirectFeaturesNV					mgPhysicalDeviceCopyMemoryIndirectFeaturesNV;
+		VkPhysicalDeviceCornerSampledImageFeaturesNV					mgPhysicalDeviceCornerSampledImageFeaturesNV;
+		VkPhysicalDeviceCoverageReductionModeFeaturesNV					mgPhysicalDeviceCoverageReductionModeFeaturesNV;
+		VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV		mgPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV;
+		VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV				mgPhysicalDeviceDeviceGeneratedCommandsFeaturesNV;
+		VkPhysicalDeviceDiagnosticsConfigFeaturesNV						mgPhysicalDeviceDiagnosticsConfigFeaturesNV;
+		VkPhysicalDeviceExclusiveScissorFeaturesNV						mgPhysicalDeviceExclusiveScissorFeaturesNV;
+		VkPhysicalDeviceExternalMemoryRDMAFeaturesNV					mgPhysicalDeviceExternalMemoryRDMAFeaturesNV;
+		VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV				mgPhysicalDeviceFragmentShadingRateEnumsFeaturesNV;
+		VkPhysicalDeviceInheritedViewportScissorFeaturesNV				mgPhysicalDeviceInheritedViewportScissorFeaturesNV;
+		VkPhysicalDeviceLinearColorAttachmentFeaturesNV					mgPhysicalDeviceLinearColorAttachmentFeaturesNV;
+		VkPhysicalDeviceMemoryDecompressionFeaturesNV					mgPhysicalDeviceMemoryDecompressionFeaturesNV;
+		VkPhysicalDeviceMeshShaderFeaturesNV							mgPhysicalDeviceMeshShaderFeaturesNV;
+		VkPhysicalDeviceOpticalFlowFeaturesNV							mgPhysicalDeviceOpticalFlowFeaturesNV;
+		VkPhysicalDevicePresentBarrierFeaturesNV						mgPhysicalDevicePresentBarrierFeaturesNV;
+		VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV			mgPhysicalDeviceRayTracingInvocationReorderFeaturesNV;
+		VkPhysicalDeviceRayTracingMotionBlurFeaturesNV					mgPhysicalDeviceRayTracingMotionBlurFeaturesNV;
+		VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV			mgPhysicalDeviceRepresentativeFragmentTestFeaturesNV;
+		VkPhysicalDeviceShaderImageFootprintFeaturesNV					mgPhysicalDeviceShaderImageFootprintFeaturesNV;
+		VkPhysicalDeviceShaderSMBuiltinsFeaturesNV						mgPhysicalDeviceShaderSMBuiltinsFeaturesNV;
+#endif
+		//VkPhysicalDeviceDisplacementMicromapFeaturesNV					mgPhysicalDeviceDisplacementMicromapFeaturesNV;
+		//VkPhysicalDeviceDepthBiasControlFeaturesEXT						mgPhysicalDeviceDepthBiasControlFeaturesEXT;
+		//VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT	mgPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT;
+		//VkPhysicalDeviceCooperativeMatrixFeaturesKHR					mgPhysicalDeviceCooperativeMatrixFeaturesKHR;
+		//VkPhysicalDevicePortabilitySubsetFeaturesKHR					mgPhysicalDevicePortabilitySubsetFeaturesKHR;
+	};
+
+	struct MANTLE_GFX_API MgVkQueueFamilyPropertiesBundle {
+		VkQueueFamilyProperties2						mgQueueFamilyProperties2;
+		VkQueueFamilyGlobalPriorityPropertiesKHR		mgQueueFamilyGlobalPriorityPropertiesKHR;
+		VkQueueFamilyQueryResultStatusPropertiesKHR		mgQueueFamilyQueryResultStatusPropertiesKHR;
+		VkQueueFamilyVideoPropertiesKHR					mgQueueFamilyVideoPropertiesKHR;
+
+#ifdef NVIDIA_BUNDLE
+		VkQueueFamilyCheckpointProperties2NV			mgQueueFamilyCheckpointProperties2NV;
+		VkQueueFamilyCheckpointPropertiesNV				mgQueueFamilyCheckpointPropertiesNV;
+#endif // NVIDIA_BUNDLE
+	};
+
+	struct MANTLE_GFX_API MgMemoryPropertiesBundle {
+		VkPhysicalDeviceMemoryProperties2				mgPhysicalDeviceMemoryProperties2;
+		VkPhysicalDeviceMemoryBudgetPropertiesEXT		mgPhysicalDeviceMemoryBudgetPropertiesEXT;
+	};
+
+
+	struct MANTLE_GFX_API MgPhysicalDeviceInfoBundle {
+		MgPhysicalDevicePropertiesBundle	mgPropertiesBundle;
+		MgPhysicalDeviceFeaturesBundle		mgFeaturesBundle;
+		MgVkQueueFamilyPropertiesBundle		mgQueueFamilyBundle;
+		MgMemoryPropertiesBundle			mgMemoryBundle;
+	};
+
+} // !MantleGfx
+#endif // !MANTLE_INTERFACE_VULKAN_STRUCTS_HEADER_

@@ -1,1 +1,1 @@
-# MantleGraphics
+# MantleCore

@@ -1,5 +1,5 @@
 --sln name
-workspace "MantleGraphics"
+workspace "MantleCore"
     architecture "x64"
 
     configurations {
@@ -8,12 +8,12 @@ workspace "MantleGraphics"
     }
 
     --start at the project folder
-    startproject "MantleGraphics"
+    startproject "MantleCore"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 --include project folder
-include "MantleGraphics"
+include "MantleCore"
 
 
 ---------------------------------------------------------------------------------------
